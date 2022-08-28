@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.MainActivity">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextExp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="32dp"
+            android:digits="0123456789*/+-"
+            android:hint="@string/hint_enter_expression"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/label_show_history"
+            app:layout_constraintEnd_toEndOf="@+id/editTextExp"
+            app:layout_constraintStart_toStartOf="@+id/editTextExp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextExp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextExp"
+            app:layout_constraintStart_toStartOf="@+id/editTextExp"
+            app:layout_constraintTop_toBottomOf="@+id/btnHistory"
+            tools:itemCount="5"
+            tools:listitem="@layout/layout_data" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

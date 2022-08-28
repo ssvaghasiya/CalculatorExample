@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DemoAssign</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="label_show_history">Show History</string>
+    <string name="label_hide_history">Hide History</string>
+    <string name="hint_enter_expression">Enter expression</string>
+    <string name="label_enter_valid_expression">Enter valid expression</string>
+    <string name="label_please_enter_expression">Please enter expression</string>
+
+</resources>
